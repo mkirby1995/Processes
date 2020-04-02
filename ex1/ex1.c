@@ -8,7 +8,11 @@
 
 int main(void)
 {
-    // Your code here
-
+    int x = 100;
+    int pid_t = fork();
+    x ++;
+    printf("Process:%d \tValue: %d\n", getpid(), x);
+    x --;
+    printf("Process:%d \tValue: %d\n", getpid(), x);
     return 0;
 }
